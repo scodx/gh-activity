@@ -2,6 +2,7 @@
 
 RANDOM_STRING=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 
+cd /home/scodx/projects/gh-activity
 git reset --hard origin/master
 echo $RANDOM_STRING > activity.txt
 git add .
